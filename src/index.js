@@ -31,7 +31,7 @@ app.get('/datos', async (req, res) => {
     try {
         const respuesta = await sheets.spreadsheets.values.get({
             spreadsheetId,
-            range: "'Hoja 1'!A4:F51",
+            range: "'Hoja1'!A4:F51",
             majorDimension: 'ROWS',
         });
 
